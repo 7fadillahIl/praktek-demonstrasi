@@ -58,6 +58,9 @@ if (!isset($_SESSION['status']) == 'login') {
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-user"  placeholder="No.Hp" name="no_hp" id="no_hp" required="" autocomplete="off">
                             </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user"  placeholder="nik" name="nik" id="nik" required="" autocomplete="off">
+                            </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-warning btn-style">Tambahkan</button>
                             </div>

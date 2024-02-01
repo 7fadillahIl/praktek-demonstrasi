@@ -131,7 +131,7 @@ $result = $konek->query($sql);
             <div class="float-end">
               <p>
                 Dibuat Dengan
-                <span class="text-danger"><i class="bi bi-heart-fill"></i></span>
+                <span class="text-danger"><i class="bi bi-fire"></i></span>
                 by <a href="https://github.com/7fadillahIl">Ilham</a> 
               </p>
             </div>

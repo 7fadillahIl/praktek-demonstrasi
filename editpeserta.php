@@ -65,6 +65,9 @@ if (!isset($_SESSION['status']) == 'login') {
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-user" placeholder="No.Hp" name="no_hp" id="no_hp" required="" autocomplete="off" value="<?= $row['no_hp'] ?>">
                             </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user" placeholder="nik" name="nik" id="no_hp" required="" autocomplete="off" value="<?= $row['nik'] ?>">
+                            </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-warning btn-style">Edit Data</button>
                             </div>

@@ -7,13 +7,15 @@ $nama_peserta = $_POST['nama_peserta'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $alamat = $_POST['alamat'];
 $no = $_POST['no_hp'];
+$nik = $_POST['nik'];
 
 
-$query = "UPDATE peserta set kd_skema ='kd_skema',
+$query = "UPDATE peserta set kd_skema ='$kd_skema',
 nama_peserta = '$nama_peserta',
 jenis_kelamin = '$jenis_kelamin',
 alamat ='$alamat',
-no_hp ='$no'
+no_hp ='$no',
+nik ='$nik'
 WHERE id_peserta = '$id'";
 $eksekusi = mysqli_query($konek, $query);
 if ($eksekusi) {

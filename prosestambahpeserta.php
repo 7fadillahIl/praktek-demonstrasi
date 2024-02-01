@@ -6,11 +6,12 @@ $nama_peserta = $_POST['nama_peserta'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $alamat = $_POST['alamat'];
 $no = $_POST['no_hp'];
+$nik = $_POST['nik'];
 
 
 
-$query = "INSERT into peserta (kd_skema, nama_peserta, jenis_kelamin, alamat, no_hp) VALUES 
-            ('$kd_skema','$nama_peserta','$jenis_kelamin','$alamat', '$no')";
+$query = "INSERT into peserta (kd_skema, nama_peserta, jenis_kelamin, alamat, no_hp, nik) VALUES 
+            ('$kd_skema','$nama_peserta','$jenis_kelamin','$alamat', '$no', '$nik')";
 $eksekusi = mysqli_query($konek, $query);
 if ($eksekusi) {
     echo "<script> 

@@ -48,10 +48,10 @@ $result = $konek->query($sql);
 <div class="page-heading">
     <div class="page-title">
         <div class="row">
-            <div class="col-12 col-md-6 order-md-1 order-last">
+            <div class="col-12 col-md-6 order-md-2 order-first">
                 <h3>Data Sertifikasi Peserta Alhikmah</h3>
                 </div>
-            <div class="col-12 col-md-6 order-md-2 order-first">
+            <div class="col-12 col-md-6 order-md-1 order-first">
                 <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                 </nav>
             </div>
@@ -87,7 +87,8 @@ $result = $konek->query($sql);
                       <th>Nama peserta</th>
                       <th>Jenis Kelamin</th>
                       <th>Alamat</th>
-                      <th>No Hp</th>
+                      <th>No Hp</th> 
+                      <th>NIK</th> 
                       <?php if (isset($_SESSION['status']) == 'login') { ?>
                         <th>edit dan hapus</th>
                       <?php } ?>
@@ -104,6 +105,7 @@ $result = $konek->query($sql);
                           <th><?= $row['jenis_kelamin'] ?> </th>
                           <th><?= $row['alamat'] ?> </th>
                           <th><?= $row['no_hp'] ?> </th>
+                          <th><?= $row['nik'] ?> </th>
                           <?php if (isset($_SESSION['status']) == 'login') { ?>
                             <th>
                               <a href="editpeserta.php?id_peserta=<?= $row['id_peserta'] ?>" class="btn btn-warning text-center p-1 ">edit </a>
@@ -133,7 +135,7 @@ $result = $konek->query($sql);
             <div class="float-end">
               <p>
                 Dibuat Dengan
-                <span class="text-danger"><i class="bi bi-heart-fill"></i></span>
+                <span class="text-danger"><i class="bi bi-fire"></i></span>
                 by <a href="https://github.com/7fadillahIl">Ilham</a> 
               </p>
             </div>
